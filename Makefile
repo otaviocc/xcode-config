@@ -24,6 +24,10 @@ install:
 	@-defaults delete com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes &> /dev/null ||:
 	@-defaults write com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes -array-add "ViewModel" "View" "Tests"
 	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
+	@-defaults write com.apple.dt.Xcode AutomaticallyCheckSpellingWhileTyping -bool true
+	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
+	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
+	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Neon+.xccolortheme"
 
 	@echo Done
 backup:
