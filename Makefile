@@ -8,6 +8,7 @@ install:
 	@mkdir -p $(THEMES_DIR)
 	@cp ./themes/Neon.xccolortheme $(THEMES_DIR)
 	@cp ./themes/Neon+.xccolortheme $(THEMES_DIR)
+	@cp ./themes/Default+.xccolortheme $(THEMES_DIR)
 
 	@echo Installing breakpoints
 	@mkdir -p $(BREAKPOINTS_DIR)
@@ -34,6 +35,7 @@ backup:
 	@echo Copying themes
 	@cp $(THEMES_DIR)/Neon.xccolortheme themes/
 	@cp $(THEMES_DIR)/Neon+.xccolortheme themes/
+	@cp $(THEMES_DIR)/Default+.xccolortheme themes/
 
 	@echo Copying breakpoints
 	@cp  $(BREAKPOINTS_DIR)/Breakpoints_v2.xcbkptlist breakpoints/
