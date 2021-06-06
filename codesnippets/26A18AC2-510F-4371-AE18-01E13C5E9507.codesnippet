@@ -9,15 +9,15 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Nested types
+	<string>// MARK: - Nested types
 
-    // MARK: - Properties
+// MARK: - Properties
 
-    // MARK: - Life cycle
+// MARK: - Life cycle
 
-    // MARK: - Public
+// MARK: - Public
 
-    // MARK: - Private</string>
+// MARK: - Private</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>26A18AC2-510F-4371-AE18-01E13C5E9507</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -29,6 +29,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
