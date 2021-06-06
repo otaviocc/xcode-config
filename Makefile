@@ -34,6 +34,7 @@ install:
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
 	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Neon+.xccolortheme"
+	@-defaults write com.apple.dt.Xcode IDENavigatorRowSizeStyle -int 1
 
 	@echo Done
 backup:
