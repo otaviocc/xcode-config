@@ -2,6 +2,7 @@ USER_DATA_DIR=$(HOME)/Library/Developer/Xcode/UserData
 TEMPLATES_DIR=$(HOME)/Library/Developer/Xcode/Templates/File\ Templates/OCC
 THEMES_DIR=$(HOME)/Library/Developer/Xcode/UserData/FontAndColorThemes/
 BREAKPOINTS_DIR=$(HOME)/Library/Developer/Xcode/UserData/xcdebugger/
+SNIPPETS_DIR=$(HOME)/Library/Developer/Xcode/UserData/CodeSnippets/
 
 install:
 	@echo Installing themes
@@ -20,6 +21,10 @@ install:
 	@echo Installing file templates
 	@mkdir -p $(TEMPLATES_DIR)
 	@cp -R ./file_templates/* $(TEMPLATES_DIR)
+
+	@echo Installing code snippets
+	@mkdir -p $(SNIPPETS_DIR)
+	@cp ./codesnippets/*.codesnippet $(SNIPPETS_DIR)
 
 	@echo Configuring Xcode
 	@-defaults delete com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes &> /dev/null ||:
@@ -45,5 +50,8 @@ backup:
 
 	@echo Copying file templates
 	@cp -R $(TEMPLATES_DIR)/ file_templates/
+
+	@echo Copying code snippets
+	@cp $(SNIPPETS_DIR)/*.codesnippet codesnippets/
 
 	@echo Done
