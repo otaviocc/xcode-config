@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>SupportsSwiftPackage</key>
+		<true/>
+		<key>Kind</key>
+		<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+		<key>Description</key>
+		<string>A Coordinator.</string>
+		<key>Summary</key>
+		<string>A Coordinator.</string>
+		<key>SortOrder</key>
+		<string>2</string>
+		<key>DefaultCompletionName</key>
+		<string>MyProduct</string>
+		<key>Platforms</key>
+		<array>
+			<string>com.apple.platform.iphoneos</string>
+			<string>com.apple.platform.macosx</string>
+		</array>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>productName</string>
+				<key>Required</key>
+				<true/>
+				<key>Name</key>
+				<string>Coordinator Name</string>
+				<key>Description</key>
+				<string>The coordinator name (e.g. Checkout)</string>
+				<key>Type</key>
+				<string>text</string>
+				<key>Not Persisted</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</plist>
