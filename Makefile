@@ -1,8 +1,8 @@
 USER_DATA_DIR=$(HOME)/Library/Developer/Xcode/UserData
 TEMPLATES_DIR=$(HOME)/Library/Developer/Xcode/Templates/File\ Templates/OCC
-THEMES_DIR=$(HOME)/Library/Developer/Xcode/UserData/FontAndColorThemes/
-BREAKPOINTS_DIR=$(HOME)/Library/Developer/Xcode/UserData/xcdebugger/
-SNIPPETS_DIR=$(HOME)/Library/Developer/Xcode/UserData/CodeSnippets/
+THEMES_DIR=$(HOME)/Library/Developer/Xcode/UserData/FontAndColorThemes
+BREAKPOINTS_DIR=$(HOME)/Library/Developer/Xcode/UserData/xcdebugger
+SNIPPETS_DIR=$(HOME)/Library/Developer/Xcode/UserData/CodeSnippets
 
 install:
 	@echo Installing themes
@@ -37,6 +37,24 @@ install:
 	@-defaults write com.apple.dt.Xcode IDENavigatorRowSizeStyle -int 1
 
 	@echo Done
+
+uninstall:
+	@echo Uninstalling
+	@-rm $(THEMES_DIR)/Neon.xccolortheme &> /dev/null ||:
+	@-rm $(THEMES_DIR)/Neon+.xccolortheme &> /dev/null ||:
+	@-rm $(THEMES_DIR)/Default+.xccolortheme &> /dev/null ||:
+
+	@echo Uninstalling file templates
+	@-rm -rf $(TEMPLATES_DIR) &> /dev/null ||:
+
+	@echo Uninstalling default header
+	@-rm $(BREAKPOINTS_DIR)/Breakpoints_v2.xcbkptlist &> /dev/null ||:
+
+	@echo Uninstalling code snippets
+	@-rm $(SNIPPETS_DIR)/*.codesnippet &> /dev/null ||:
+
+	@echo Done
+
 backup:
 	@echo Copying themes
 	@cp $(THEMES_DIR)/Neon.xccolortheme themes/
