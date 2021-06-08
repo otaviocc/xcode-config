@@ -1,5 +1,12 @@
 # Xcode Settings
 
+* Themes
+* Breakpoints
+* Default header
+* File templates
+* Code snippets
+* Additional Xcode settings
+
 ## Install
 
 ```
