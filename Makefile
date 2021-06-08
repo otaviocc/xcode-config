@@ -29,12 +29,20 @@ install:
 	@echo Configuring Xcode
 	@-defaults delete com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes &> /dev/null ||:
 	@-defaults write com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes -array-add "ViewModel" "View" "Tests"
-	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
+
 	@-defaults write com.apple.dt.Xcode AutomaticallyCheckSpellingWhileTyping -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
-	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Neon+.xccolortheme"
+	@-defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool true
+	@-defaults write com.apple.dt.Xcode DVTTextShowMarkSeparators -bool false
+	@-defaults write com.apple.dt.Xcode IDEFileExtensionDisplayMode -bool false
 	@-defaults write com.apple.dt.Xcode IDENavigatorRowSizeStyle -int 1
+	@-defaults write com.apple.dt.Xcode IDESourceControlAutomaticallyAddNewFiles -bool false
+	@-defaults write com.apple.dt.Xcode IDESourceControlLocalStatusCheckingEnabled -bool false
+	@-defaults write com.apple.dt.Xcode IDESourceControlPreselectCommitSheetFiles -bool false
+	@-defaults write com.apple.dt.Xcode IDESourceControlRemoteStatusFetchingEnabled -bool false
+	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
+	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Neon+.xccolortheme"
 
 	@echo Done
 
