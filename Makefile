@@ -35,7 +35,7 @@ install:
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextShowMarkSeparators -bool false
-	@-defaults write com.apple.dt.Xcode IDEFileExtensionDisplayMode -bool false
+	@-defaults write com.apple.dt.Xcode IDEFileExtensionDisplayMode -int 2
 	@-defaults write com.apple.dt.Xcode IDENavigatorRowSizeStyle -int 1
 	@-defaults write com.apple.dt.Xcode IDESourceControlAutomaticallyAddNewFiles -bool false
 	@-defaults write com.apple.dt.Xcode IDESourceControlLocalStatusCheckingEnabled -bool false
