@@ -34,7 +34,8 @@ install:
 	@echo Configuring Xcode
 	@-defaults delete com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes &> /dev/null ||:
 	@-defaults write com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes -array-add "ViewModel" "View" "Tests"
-
+	@-defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_Alternate Ask
+	@-defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_ShiftPlusAlternate NextEditor
 	@-defaults write com.apple.dt.Xcode AutomaticallyCheckSpellingWhileTyping -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool true
 	@-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
