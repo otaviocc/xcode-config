@@ -25,7 +25,7 @@ install:
 
 	@echo Installing code snippets
 	@mkdir -p $(SNIPPETS_DIR)
-	@cp ./codesnippets/*.codesnippet $(SNIPPETS_DIR)
+	@cp ./code_snippets/*.codesnippet $(SNIPPETS_DIR)
 
 	@echo Installing key bindings
 	@mkdir -p $(KEYBINDINGS_DIR)
@@ -87,7 +87,7 @@ backup:
 	@cp -R $(TEMPLATES_DIR)/ file_templates/
 
 	@echo Copying code snippets
-	@cp $(SNIPPETS_DIR)/*.codesnippet codesnippets/
+	@cp $(SNIPPETS_DIR)/*.codesnippet code_snippets/
 
 	@echo Copying key bindings
 	@cp $(KEYBINDINGS_DIR)/*.idekeybindings key_bindings/
