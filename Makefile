@@ -3,6 +3,7 @@ TEMPLATES_DIR=$(HOME)/Library/Developer/Xcode/Templates/File\ Templates/OCC
 THEMES_DIR=$(HOME)/Library/Developer/Xcode/UserData/FontAndColorThemes
 BREAKPOINTS_DIR=$(HOME)/Library/Developer/Xcode/UserData/xcdebugger
 SNIPPETS_DIR=$(HOME)/Library/Developer/Xcode/UserData/CodeSnippets
+KEYBINDINGS_DIR=$(HOME)/Library/Developer/Xcode/UserData/KeyBindings
 
 install:
 	@echo Installing themes
@@ -25,6 +26,10 @@ install:
 	@echo Installing code snippets
 	@mkdir -p $(SNIPPETS_DIR)
 	@cp ./codesnippets/*.codesnippet $(SNIPPETS_DIR)
+
+	@echo Installing key bindings
+	@mkdir -p $(KEYBINDINGS_DIR)
+	@cp ./key_bindings/*.idekeybindings $(KEYBINDINGS_DIR)
 
 	@echo Configuring Xcode
 	@-defaults delete com.apple.dt.Xcode IDEAdditionalCounterpartSuffixes &> /dev/null ||:
@@ -61,6 +66,9 @@ uninstall:
 	@echo Uninstalling code snippets
 	@-rm $(SNIPPETS_DIR)/*.codesnippet &> /dev/null ||:
 
+	@echo Uninstalling key bindings
+	@-rm $(KEYBINDINGS_DIR)/*.idekeybindings &> /dev/null ||:
+
 	@echo Done
 
 backup:
@@ -80,5 +88,8 @@ backup:
 
 	@echo Copying code snippets
 	@cp $(SNIPPETS_DIR)/*.codesnippet codesnippets/
+
+	@echo Copying key bindings
+	@cp $(KEYBINDINGS_DIR)/*.idekeybindings key_bindings/
 
 	@echo Done
