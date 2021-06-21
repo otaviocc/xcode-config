@@ -1,5 +1,5 @@
 USER_DATA_DIR=$(HOME)/Library/Developer/Xcode/UserData
-TEMPLATES_DIR=$(HOME)/Library/Developer/Xcode/Templates/File\ Templates/OCC
+TEMPLATES_DIR=$(HOME)/Library/Developer/Xcode/Templates/File\ Templates/Custom
 THEMES_DIR=$(HOME)/Library/Developer/Xcode/UserData/FontAndColorThemes
 BREAKPOINTS_DIR=$(HOME)/Library/Developer/Xcode/UserData/xcdebugger
 SNIPPETS_DIR=$(HOME)/Library/Developer/Xcode/UserData/CodeSnippets
