@@ -8,8 +8,7 @@ KEYBINDINGS_DIR=$(HOME)/Library/Developer/Xcode/UserData/KeyBindings
 install:
 	@echo Installing themes
 	@mkdir -p $(THEMES_DIR)
-	@cp ./themes/Neon.xccolortheme $(THEMES_DIR)
-	@cp ./themes/Neon+.xccolortheme $(THEMES_DIR)
+	@cp ./themes/Neon*.xccolortheme $(THEMES_DIR)
 	@cp ./themes/Default+.xccolortheme $(THEMES_DIR)
 
 	@echo Installing breakpoints
@@ -54,8 +53,7 @@ install:
 
 uninstall:
 	@echo Uninstalling
-	@-rm $(THEMES_DIR)/Neon.xccolortheme &> /dev/null ||:
-	@-rm $(THEMES_DIR)/Neon+.xccolortheme &> /dev/null ||:
+	@-rm $(THEMES_DIR)/Neon*.xccolortheme &> /dev/null ||:
 	@-rm $(THEMES_DIR)/Default+.xccolortheme &> /dev/null ||:
 
 	@echo Uninstalling file templates
@@ -74,8 +72,7 @@ uninstall:
 
 backup:
 	@echo Copying themes
-	@cp $(THEMES_DIR)/Neon.xccolortheme themes/
-	@cp $(THEMES_DIR)/Neon+.xccolortheme themes/
+	@cp $(THEMES_DIR)/Neon*.xccolortheme themes/
 	@cp $(THEMES_DIR)/Default+.xccolortheme themes/
 
 	@echo Copying breakpoints
