@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>guardself</string>
+	<string>coding</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>guard let self = self else { return }</string>
+	<string>private enum CodingKeys: String, CodingKey {
+    case &lt;#name#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>69D82128-B52C-415B-9419-E9BD9104E958</string>
+	<string>1C6AFB68-568E-453B-BB42-0791BFE0E50A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Custom Guard-Self Statement</string>
+	<string>CodingKeys CodingKeys</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
