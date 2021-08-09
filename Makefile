@@ -48,7 +48,7 @@ install:
 	@-defaults write com.apple.dt.Xcode IDESourceControlPreselectCommitSheetFiles -bool false
 	@-defaults write com.apple.dt.Xcode IDESourceControlRemoteStatusFetchingEnabled -bool false
 	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
-	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Neon+.xccolortheme"
+	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Gruvbox.xccolortheme"
 
 	@echo Done
 
