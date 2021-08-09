@@ -10,6 +10,7 @@ install:
 	@mkdir -p $(THEMES_DIR)
 	@cp ./themes/Neon*.xccolortheme $(THEMES_DIR)
 	@cp ./themes/Default+.xccolortheme $(THEMES_DIR)
+	@cp ./themes/Gruvbox.xccolortheme $(THEMES_DIR)
 
 	@echo Installing breakpoints
 	@mkdir -p $(BREAKPOINTS_DIR)
@@ -55,6 +56,7 @@ uninstall:
 	@echo Uninstalling
 	@-rm $(THEMES_DIR)/Neon*.xccolortheme &> /dev/null ||:
 	@-rm $(THEMES_DIR)/Default+.xccolortheme &> /dev/null ||:
+	@-rm $(THEMES_DIR)/Gruvbox.xccolortheme &> /dev/null ||:
 
 	@echo Uninstalling file templates
 	@-rm -rf $(TEMPLATES_DIR) &> /dev/null ||:
@@ -74,6 +76,7 @@ backup:
 	@echo Copying themes
 	@cp $(THEMES_DIR)/Neon*.xccolortheme themes/
 	@cp $(THEMES_DIR)/Default+.xccolortheme themes/
+	@cp $(THEMES_DIR)/Gruvbox.xccolortheme themes/
 
 	@echo Copying breakpoints
 	@cp  $(BREAKPOINTS_DIR)/Breakpoints_v2.xcbkptlist breakpoints/
