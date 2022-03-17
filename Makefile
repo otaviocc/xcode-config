@@ -49,6 +49,7 @@ install:
 	@-defaults write com.apple.dt.Xcode IDESourceControlRemoteStatusFetchingEnabled -bool false
 	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
 	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Default+.xccolortheme"
+	@-defaults write com.apple.corevideo cv_note -int 0
 
 	@echo Done
 
