@@ -3,6 +3,7 @@
 import XCTest
 
 final class ___VARIABLE_productName:identifier___Tests: XCTestCase {
+
     // MARK: - Properties
 
     private var sut: ___VARIABLE_productName:identifier___!

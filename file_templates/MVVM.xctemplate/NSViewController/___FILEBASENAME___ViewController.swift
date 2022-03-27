@@ -1,8 +1,8 @@
 //___FILEHEADER___
 
-import UIKit
+import AppKit
 
-final class ___VARIABLE_productName:identifier___ViewController: UIViewController {
+final class ___VARIABLE_productName:identifier___ViewController: NSViewController {
 
     // MARK: - Properties
 

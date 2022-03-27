@@ -7,6 +7,7 @@ struct ___VARIABLE_productName:identifier___Environment {
 }
 
 extension ___VARIABLE_productName:identifier___Environment {
+
     static func live(
         <#parameters#>
     ) -> Self {

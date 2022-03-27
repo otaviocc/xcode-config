@@ -1,9 +1,9 @@
 //___FILEHEADER___
 
-import UIKit
+import AppKit
 
-final class ___VARIABLE_productName:identifier___View: UIView {
-    
+final class ___VARIABLE_productName:identifier___View: NSView {
+
     // MARK: - Properties
 
     // MARK: - Life cycle

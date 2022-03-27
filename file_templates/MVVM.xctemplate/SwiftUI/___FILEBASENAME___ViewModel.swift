@@ -3,6 +3,7 @@
 import Combine
 
 final class ___VARIABLE_productName:identifier___ViewModel: ObservableObject {
+
     // MARK: - Properties
 
     // MARK: - Life cycle
