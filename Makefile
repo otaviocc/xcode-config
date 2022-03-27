@@ -23,9 +23,9 @@ install:
 	@mkdir -p $(TEMPLATES_DIR)
 	@cp -R ./file_templates/* $(TEMPLATES_DIR)
 
-	@echo Installing code snippets
-	@mkdir -p $(SNIPPETS_DIR)
-	@cp ./code_snippets/*.codesnippet $(SNIPPETS_DIR)
+	# 	@echo Installing code snippets
+	# 	@mkdir -p $(SNIPPETS_DIR)
+	# 	@cp ./code_snippets/*.codesnippet $(SNIPPETS_DIR)
 
 	@echo Installing key bindings
 	@mkdir -p $(KEYBINDINGS_DIR)
@@ -65,8 +65,8 @@ uninstall:
 	@echo Uninstalling default header
 	@-rm $(BREAKPOINTS_DIR)/Breakpoints_v2.xcbkptlist &> /dev/null ||:
 
-	@echo Uninstalling code snippets
-	@-rm $(SNIPPETS_DIR)/*.codesnippet &> /dev/null ||:
+	# 	@echo Uninstalling code snippets
+	# 	@-rm $(SNIPPETS_DIR)/*.codesnippet &> /dev/null ||:
 
 	@echo Uninstalling key bindings
 	@-rm $(KEYBINDINGS_DIR)/*.idekeybindings &> /dev/null ||:
@@ -88,8 +88,8 @@ backup:
 	@echo Copying file templates
 	@cp -R $(TEMPLATES_DIR)/ file_templates/
 
-	@echo Copying code snippets
-	@cp $(SNIPPETS_DIR)/*.codesnippet code_snippets/
+	# 	@echo Copying code snippets
+	# 	@cp $(SNIPPETS_DIR)/*.codesnippet code_snippets/
 
 	@echo Copying key bindings
 	@cp $(KEYBINDINGS_DIR)/*.idekeybindings key_bindings/
