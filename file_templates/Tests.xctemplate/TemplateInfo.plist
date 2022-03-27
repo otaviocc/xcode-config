@@ -51,7 +51,7 @@
 				<key>Values</key>
 				<array>
 					<string>Unit Tests</string>
-					<string>Snapshot Tests</string>
+					<string>Quick</string>
 				</array>
 			</dict>
 		</array>

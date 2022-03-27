@@ -44,11 +44,11 @@ install:
 	@-defaults write com.apple.dt.Xcode IDEFileExtensionDisplayMode -int 2
 	@-defaults write com.apple.dt.Xcode IDENavigatorRowSizeStyle -int 1
 	@-defaults write com.apple.dt.Xcode IDESourceControlAutomaticallyAddNewFiles -bool false
-	@-defaults write com.apple.dt.Xcode IDESourceControlLocalStatusCheckingEnabled -bool false
+	@-defaults write com.apple.dt.Xcode IDESourceControlLocalStatusCheckingEnabled -bool true
 	@-defaults write com.apple.dt.Xcode IDESourceControlPreselectCommitSheetFiles -bool false
 	@-defaults write com.apple.dt.Xcode IDESourceControlRemoteStatusFetchingEnabled -bool false
 	@-defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
-	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Gruvbox.xccolortheme"
+	@-defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string "Default+.xccolortheme"
 
 	@echo Done
 

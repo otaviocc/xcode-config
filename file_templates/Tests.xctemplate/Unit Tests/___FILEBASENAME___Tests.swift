@@ -12,7 +12,9 @@ final class ___VARIABLE_productName:identifier___Tests: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
 
-        sut = ___VARIABLE_productName:identifier___(<#parameters#>)
+        sut = ___VARIABLE_productName:identifier___(
+            <#parameters#>
+        )
     }
 
     override func tearDownWithError() throws {

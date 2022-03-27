@@ -50,8 +50,8 @@
 				<string>View</string>
 				<key>Values</key>
 				<array>
-					<string>View</string>
-					<string>View Controller</string>
+					<string>UIView</string>
+					<string>UIViewController</string>
 					<string>SwiftUI</string>
 				</array>
 			</dict>
