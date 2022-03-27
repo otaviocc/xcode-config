@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>netclient</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>.init(
+    path: &lt;#T##String#&gt;,
+    method: &lt;#T##HTTPMethod#&gt;,
+    parameters: &lt;#T##[String : String]?#&gt;,
+    body: &lt;#T##VoidRequest?#&gt;,
+    decoder: &lt;#T##JSONDecoder?#&gt;,
+    encoder: &lt;#T##JSONEncoder?#&gt;
+)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A29EEF78-8B08-4401-B82A-9B11D60B6EF0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Network Client</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
